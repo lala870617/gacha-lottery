@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>幸運扭蛋抽獎</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="eyebrow">Nipple Lottery </div>
+      <h1>奶頭生日扭蛋</h1>
+      <p class="subtitle">自己的生日禮物自己抽 ✨</p>
+
+      <div class="machine-wrap">
+        <div id="machine" class="machine" aria-label="扭蛋機">
+          <div class="machine-top">
+            <div class="glass">
+              <div class="capsule c1"><span></span></div>
+              <div class="capsule c2"><span></span></div>
+              <div class="capsule c3"><span></span></div>
+              <div class="capsule c4"><span></span></div>
+              <div class="capsule c5"><span></span></div>
+              <div class="capsule c6"><span></span></div>
+              <div class="shine"></div>
+            </div>
+          </div>
+
+          <div class="machine-body">
+            <div class="coin-label">NIPPLE</div>
+
+            <button id="knob" class="knob" type="button" aria-label="轉動扭蛋">
+              <span class="knob-bar"></span>
+            </button>
+
+            <div class="slot">
+              <div id="dropCapsule" class="drop-capsule">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="machine-foot"></div>
+        </div>
+      </div>
+
+      <button id="drawBtn" class="draw-btn" type="button">
+        <span class="coin">●</span>
+        你按一下
+      </button>
+
+      <p class="hint">機率都一樣喔自己加油</p>
+
+      <div class="prize-list">
+        <span>1000</span>
+        <span>2000</span>
+        <span>3000</span>
+        <span>1+1任選課程</span>
+      </div>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay" aria-hidden="true">
+    <div class="result-card" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+      <div class="confetti">🎉</div>
+      <div class="mini-capsule"><span></span></div>
+      <p id="resultTitle" class="result-label">恭喜你抽中</p>
+      <div id="resultPrize" class="result-prize">3000</div>
+      <p class="result-sub">LUCKY!</p>
+      <button id="closeBtn" class="close-btn" type="button">預約課程</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
